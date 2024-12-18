@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScanDetector.Data\ScanDetector.Data.csproj" />
+    <ProjectReference Include="..\ScanDetector.Infrastructure\ScanDetector.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="ClosedXML" Version="0.104.2" />
+	  <PackageReference Include="CloudinaryDotNet" Version="1.26.2" />
+	  <PackageReference Include="HtmlToPdfConverter.Core" Version="2.0.0" />
+	  <PackageReference Include="MailKit" Version="4.1.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+	  <PackageReference Include="QuestPDF" Version="2024.10.4" />
+  </ItemGroup>
+
+</Project>

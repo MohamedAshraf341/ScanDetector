@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\AppSetting\Queries\**" />
+    <Compile Remove="Mapping\AppSetting\QueryMapping\**" />
+    <EmbeddedResource Remove="Features\AppSetting\Queries\**" />
+    <EmbeddedResource Remove="Mapping\AppSetting\QueryMapping\**" />
+    <None Remove="Features\AppSetting\Queries\**" />
+    <None Remove="Mapping\AppSetting\QueryMapping\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScanDetector.Data\ScanDetector.Data.csproj" />
+    <ProjectReference Include="..\ScanDetector.Infrastructure\ScanDetector.Infrastructure.csproj" />
+    <ProjectReference Include="..\ScanDetector.Service\ScanDetector.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+</Project>
